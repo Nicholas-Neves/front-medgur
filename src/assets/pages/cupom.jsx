@@ -1,6 +1,6 @@
 import Banner from '../components/Banner'
 import Carrossel from '../components/Carrossel'
-import Cupons from '../Components/Cupons'
+import Cupons from '../components/Cupons'
 import Curiosidade from '../components/Curiosidade'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
