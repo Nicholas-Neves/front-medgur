@@ -1,6 +1,6 @@
 import Sobre from '../components/Sobre'
 import Header from '../components/Header';
-import Quem from '../components/Quem'
+import Quem from '../components/quem'
 import Tres from '../components/tres' 
 import Styles from "../components/tres.module.css"; 
 import Alvo from '../img/Alvo.png'
