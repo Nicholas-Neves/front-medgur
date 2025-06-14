@@ -1,0 +1,472 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 1;
+  font-family: arial;
+}
+
+.voltar {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.pontosCard {
+  background-color: #0074e8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1.8;
+}
+
+.refreshIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.leftContent {
+  flex: 1.5;
+  padding-right: 1rem;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+  flex: 1;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.circulo {
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  background: transparent;
+}
+
+.numero {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.unidade {
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+}
+
+.unidadePequena {
+  font-size: 0.75rem;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloVerde {
+  color: #4FE6AF;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.textoAcumulados {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.subTexto {
+  font-size: 15px;
+  margin-top: 0.3rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.qrImage {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.75rem;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.qrTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.qrTexto strong {
+  font-size: 1.1rem;
+}
+
+.qrTexto p {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
+.botaoQRCode {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #0074e8;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.obsTexto {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1.5rem;
+  max-width: 60%;
+  line-height: 1.2;
+}
+/*----------------------------------------------------------------------------------------------------------------*/ 
+
+/* Cards Laterais */
+.sideCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  height: 100%;
+}
+
+/* Card Descartado (Verde/Teal) */
+.descartadoCard {
+  background: #11C5D4;
+  border-radius: 12px;
+  padding: 1.2rem;
+  color: white;
+  position: relative;
+  height: 200px;
+}
+
+.descartadoIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.descartadoContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.circuloDescartado {
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.numeroDescartado {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descartadoTexto {
+  flex: 1;
+}
+
+.descartadoTitulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.descartadoSubtexto {
+  font-size: 0.8rem;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+.botaoGrafico {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botaoGrafico:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* Card Medirush (Branco) */
+.medirushCard {
+  background-color: white;
+  border: 3px solid #0074e8;
+  border-radius: 12px;
+  padding: 1.2rem;
+  height: 190px;
+  display: flex;
+  align-items: center;
+}
+
+.medirushContent {
+  width: 100%;
+  text-align: left;
+}
+
+.medirushTitulo {
+  margin: 0 0 0.5rem 0;
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+.querMais {
+  color: #0074e8;
+  font-weight: 600;
+}
+
+.pontos {
+  color: #0074e8;
+  font-weight: bold;
+}
+
+.medirushSubtitulo {
+  color: #6b7280;
+  font-size: 18px;
+  margin: 0 0 1rem 0;
+}
+
+.botaoJogar {
+  background-color: #0074e8;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.botaoJogar:hover {
+  background-color: #003c7c;
+}
+
+
+/* Botão QR Code */
+.botaoQRCode {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #0074e8;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botaoQRCode:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.botaoQRCode:active {
+  transform: scale(0.98);
+}
+
+/* Botão Gráfico */
+.botaoGrafico {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.botaoGrafico:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botaoGrafico:active {
+  transform: scale(0.98);
+}
+
+/* Botão Jogar */
+.botaoJogar {
+  background-color: #0074e8;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botaoJogar:hover {
+  background-color: #003c7c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.botaoJogar:active {
+  transform: scale(0.98);
+}
+
+/* Refresh Icon (transformando em botão animado) */
+.refreshIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.refreshIcon:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.refreshIcon:active {
+  transform: rotate(90deg) scale(0.9);
+}
+
+/* Descartado Icon (transformando em botão animado) */
+.descartadoIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.descartadoIcon:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.descartadoIcon:active {
+  transform: rotate(90deg) scale(0.9);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: column; /* cards um embaixo do outro */
+  }
+
+  .pontosCard,
+  .sideCards,
+  .medirushCard,
+  .descartadoCard {
+    flex: none; /* remove flex-grow para ajustar largura */
+    width: 100%; /* ocupa 100% da largura do container */
+    max-width: 100%; /* garante que não ultrapasse */
+  }
+
+  /* Se quiser ajustar o tamanho das alturas, pode adicionar aqui */
+  .descartadoCard,
+  .medirushCard {
+    height: auto; /* altura automática para melhor ajuste vertical */
+  }
+
+  /* Ajustar padding/margens se quiser */
+  .cardsContainer > * {
+    margin-bottom: 1rem; /* espaçamento entre cards verticais */
+  }
+
+  /* Aqui está a novidade: empilhar as infos dentro do pontosCard */
+  .pontosCard {
+    flex-direction: column; /* empilha os itens dentro do card */
+    align-items: flex-start; /* alinha à esquerda para melhor visual */
+  }
+}
+@media (max-width: 768px) {
+  /* ... seu código existente ... */
+
+  .pontosCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* essa é a nova parte */
+  .pontosCard .infoContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem; /* para dar espaçamento vertical entre os itens */
+  }
+}

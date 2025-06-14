@@ -1,0 +1,183 @@
+.footer {
+  background-color: #02468c;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coluna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 12px;
+}
+
+.textoDescricao {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 280px;
+}
+
+.redes {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.icone {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.icone:hover {
+  transform: scale(1.1);
+}
+
+/* Títulos */
+.tituloColuna {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Lista de navegação */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemLista {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.itemLista:hover {
+  color: #0ea5e9;
+}
+
+/* Texto de feedback */
+.feedbackTexto {
+  font-size: 14px;
+  margin-bottom: 12px;
+  max-width: 280px;
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  resize: none;
+}
+
+.textarea {
+  height: 70px;
+}
+
+.botao {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #0284c7;
+  transform: scale(1.05);
+}
+
+/* Rodapé final */
+.rodape {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.textoRodape {
+  font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .footer1 {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .coluna {
+    min-width: 45%;
+  }
+
+  .icone {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coluna {
+    min-width: 100%;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .textoDescricao,
+  .feedbackTexto {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .redes {
+    justify-content: center;
+  }
+
+  .icone {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tituloColuna {
+    font-size: 16px;
+  }
+
+  .itemLista {
+    font-size: 14px;
+  }
+}

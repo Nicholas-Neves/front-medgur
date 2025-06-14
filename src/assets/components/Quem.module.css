@@ -1,0 +1,57 @@
+.QuemSomos {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #C7EDF4, #FFFFFF);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Somos,
+.Texto {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.Somos:hover,
+.Texto:hover {
+    transform: translateX(0px) scale(1.05);
+    opacity: 1;
+}
+
+.Somos {
+    color: #0D4F8C;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.Texto {
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+/*************************************************************/
+
+@media screen and (max-width: 767px) {
+  .QuemSomos {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .Somos {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .Texto {
+    font-size: 18px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding: 0 10px;
+  }
+}

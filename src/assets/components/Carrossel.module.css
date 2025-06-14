@@ -1,0 +1,59 @@
+/* container principal do carrossel */
+.carrossel {
+  position: relative; /* permite posicionamento absoluto de elementos filhos */
+  width: 100%; /* ocupa toda a largura disponível */
+  max-width: 1200px; /* limite máximo de largura */
+  margin: 20px auto; /* centraliza com margem vertical */
+  font-family: Fredoka; /* fonte personalizada */
+}
+
+/* container da imagem (banner) */
+.bannerContainer {
+  position: relative;
+  overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites */
+  border-radius: 12px; /* cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+}
+
+/* imagem do banner */
+.banner {
+  width: 100%; /* ocupa toda a largura */
+  display: block;
+  object-fit: cover; /* garante que a imagem cubra todo o espaço sem distorcer */
+  transition: transform 0.5s ease; /* suaviza qualquer transformação aplicada */
+}
+
+/* container dos indicadores (pontinhos) */
+.indicadores {
+  display: flex; /* coloca os indicadores lado a lado */
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 12px; /* espaçamento entre o banner e os pontos */
+  gap: 8px; /* espaçamento entre os pontos */
+}
+
+/* estilo padrão do ponto (indicador) */
+.ponto {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* cor padrão */
+  border-radius: 50%; /* forma circular */
+  cursor: pointer; /* cursor de mão ao passar por cima */
+  transition: background-color 0.3s ease; /* transição suave na troca de cor */
+}
+
+/* ponto ativo (indicador do banner atual) */
+.ponto.ativo {
+  background-color: #007bff; /* cor azul para destacar */
+}
+
+/* efeito de fade-in (aparecendo) */
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out; /* transição suave de opacidade */
+}
+
+/* efeito de fade-out (desaparecendo) */
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out; /* mesma transição para manter consistência */
+}

@@ -1,0 +1,74 @@
+.Equipe {
+  background: linear-gradient(to right, #C7EDF4, #FFFFFF);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0D4F8C;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  margin-bottom: 60px;
+}
+
+.membro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #0D4F8C;
+  background-color: white;
+  transition: transform 0.5s ease-out;
+}
+
+.foto:hover {
+  transform: rotateY(180deg);
+}
+
+.nome {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #0D4F8C;
+  font-weight: 600;
+}
+
+
+/************************************************************/
+
+@media screen and (max-width: 767px) {
+  .titulo {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .linha {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .foto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nome {
+    font-size: 16px;
+  }
+}
+

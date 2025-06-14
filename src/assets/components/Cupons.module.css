@@ -1,0 +1,248 @@
+.cuponsSection {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: 'Fredoka';
+  /* define a seção principal com espaçamento interno e centralização */
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #0074d9;
+  margin-bottom: 10px;
+  /* título principal estilizado em azul com destaque */
+}
+
+.subtitle {
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 30px;
+  /* subtítulo abaixo do título principal */
+}
+
+.carouselContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  /* container geral do carrossel com controle de overflow */
+}
+
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  /* wrapper flexível que organiza os cards e setas */
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  padding: 10px;
+  color: #0074d9;
+  transition: all 0.3s;
+  flex-shrink: 0;
+  width: 40px;
+  text-align: center;
+  z-index: 1;
+  /* botão de seta para navegar no carrossel */
+}
+
+.arrow:hover {
+  color: #005fa3;
+  /* muda a cor da seta ao passar o mouse */
+}
+
+.arrow:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  /* estilo para quando a seta estiver desativada */
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  width: calc(100% - 100px);
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  /* área onde os cartões deslizam */
+}
+
+.card {
+  flex: 0 0 280px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 320px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  border-color: #11C5D4;
+  /* estilo visual de cada cartão de cupom */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  /* efeito de elevação ao passar o mouse */
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  /* cabeçalho do cartão com dias e desconto */
+}
+
+.dias {
+  font-size: 14px;
+  color: #0074d9;
+  font-weight: bold;
+  background-color: #e6f2ff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  /* destaque para o prazo do cupom */
+}
+
+.desconto {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0074d9;
+  margin: 0;
+  /* valor do desconto em destaque */
+}
+
+.marcaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  /* agrupa marca e nome da farmácia */
+}
+
+.marca {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  /* nome da rede ou tipo de farmácia */
+}
+
+.nome {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0074d9;
+  /* nome da farmácia com destaque */
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin: 10px 0;
+  object-fit: contain;
+  /* exibe o logo da farmácia */
+}
+
+.descricao {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.4;
+  /* descrição da oferta do cupom */
+}
+
+.pontos {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0074d9;
+  margin: 10px 0;
+  /* exibe quantos pontos são necessários */
+}
+
+.botao {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: auto;
+  /* botão de ação para acessar o site da farmácia */
+}
+
+.botao:hover {
+  background-color: #025088;
+  /* cor alternativa ao passar o mouse */
+}
+
+/* Responsividade para os títulos e subtítulos */
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    /* reduz o tamanho do título no celular */
+  }
+
+  .subtitle {
+    font-size: 18px;
+    /* reduz o tamanho do subtítulo */
+  }
+
+  .carouselWrapper {
+    justify-content: center;
+    position: relative;
+    gap: 0;
+    /* centraliza o carrossel em telas menores */
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    /* reposiciona as setas para telas menores */
+  }
+
+  .arrow:first-of-type {
+    left: -10px;
+    /* seta esquerda posicionada fora da borda */
+  }
+
+  .arrow:last-of-type {
+    right: -10px;
+    /* seta direita posicionada fora da borda */
+  }
+
+  .carousel {
+    justify-content: center;
+    gap: 0;
+    /* ajusta o layout dos cartões no mobile */
+  }
+
+  .card {
+    flex: 0 0 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    /* aumenta o tamanho do card para visualização individual */
+  }
+}

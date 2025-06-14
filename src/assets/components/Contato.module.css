@@ -1,0 +1,65 @@
+.caixa {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /*oculta oq transborda*/
+  position: relative;
+  transition: transform 0.3s ease;
+  
+}
+
+.caixa:hover {
+  transform: scale(1.15) translate(10px, 15px) rotate(20deg);
+}
+
+.caixa::before {
+  content: '';
+  display: block;
+  height: 15px;
+  width: 100%;
+  background-color: #00bcd4;
+}
+
+.imagens {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  object-fit: contain;/*controla um elemento*/
+}
+
+.titulo {
+  color: #0D4F8C;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.texto {
+  color: black;
+  font-size: 16px;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.grande {
+  color: black;
+  font-size: 16px;
+  margin: 10px 15px 0;
+}
+
+.area {
+  width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(to right, #C7EDF4, #FFFFFF);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; /*alinhar os itens no inicio do container*/
+  gap: 100px;
+  flex-wrap: wrap; /*quebra a linha , quando não tem mais espaço*/
+  
+}
+

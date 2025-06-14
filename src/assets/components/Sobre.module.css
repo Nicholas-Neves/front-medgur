@@ -1,0 +1,142 @@
+.SobreNos {
+    width: 50%;
+    height: 640px;
+    float: left;
+    background: linear-gradient(to right, #C7EDF4, #FFFFFF);
+
+}
+
+.Maos {
+    width: 50%;
+    height: 640px;
+    float: left;
+    transition: transform 0.4s ease;
+    object-fit: cover;
+}
+
+.Maos:hover {
+    transform: scale(1.03);
+}
+
+.Titulo {
+    color: #0D4F8C;
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.Paragrafo {
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 50px;
+
+}
+
+.Botao {
+  background-color: #0D81E4;
+  color: #fff;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Icone {
+  width: 80px;
+  height: 80px;
+}
+
+
+.Botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(13, 129, 228, 0.4);
+}
+
+/************************************************************/
+
+@media screen and (max-width: 1024px) {
+  .SobreNos, .Maos {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .Titulo {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+
+  .Paragrafo {
+    font-size: 22px;
+    margin-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Botao {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 180px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .Icone {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/****************************************************************/
+@media screen and (max-width: 767px) {
+  .SobreNos {
+    width: 100%;
+    float: none;
+    height: auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .Maos {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .Titulo {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  .Paragrafo {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+  }
+
+  .Botao {
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .Icone {
+    width: 50px;
+    height: 50px;
+  }
+}
+

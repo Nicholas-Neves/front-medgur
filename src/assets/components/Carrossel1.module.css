@@ -1,0 +1,275 @@
+.carrosselContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.titulo {
+  color: #005288;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.carrosselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.navButton:hover:not(.disabled) {
+  opacity: 0.7;
+}
+
+.prevButton {
+  margin-right: 10px;
+}
+
+.nextButton {
+  margin-left: 10px;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carrosselContent {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrosselTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carrosselItem {
+  flex: 0 0 33.333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.cupomCard {
+  background-color: #005288;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.cupomCard:hover {
+  transform: translateY(-2px);
+}
+
+.diasTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0077cc;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cupomContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.percentSection {
+  display: flex;
+  align-items: baseline;
+}
+
+.percentValue {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.percentSymbol {
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+.arrowSection {
+  margin: 0 15px;
+}
+
+.arrow {
+  color: white;
+  font-size: 24px;
+}
+
+.pontosSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pontosValue {
+  color: #4FE6AF;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.pontosLabel {
+  font-size: 14px;
+}
+
+.descricao {
+  font-size: 14px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+/* Footer do cartão: botão + logo alinhados horizontalmente, sem quebras */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Botão trocar com largura e alinhamento fixos para evitar empurrar layout */
+.trocarButton {
+  background-color: white;
+  color: #005288;
+  border: 2px solid #005288;
+  border-radius: 4px;
+  padding: 6px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.trocarButton:hover {
+  background-color: #013d65;
+  color: white;
+}
+
+/* Container da logo para controlar o tamanho da imagem */
+.logoContainer {
+  height: 40px; /* aumenta o container da logo/ sobe e desce */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.raiaLogo {
+  /* max-height: 100%; */
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+
+/* Indicadores (bolinhas embaixo) */
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.indicator:hover {
+  background-color: #999;
+}
+
+.indicator.active {
+  background-color: #666;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .carrosselItem {
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+
+  .titulo {
+    font-size: 24px;
+  }
+
+  .cupomCard {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .percentValue {
+    font-size: 48px;
+  }
+
+  .pontosValue {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrosselContainer {
+    padding: 15px 0;
+  }
+
+  .carrosselItem {
+    padding: 0 5px;
+  }
+
+  .cupomCard {
+    padding: 15px;
+  }
+
+  .percentValue {
+    font-size: 40px;
+  }
+
+  .descricao {
+    font-size: 13px;
+  }
+}

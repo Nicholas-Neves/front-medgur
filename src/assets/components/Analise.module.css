@@ -1,0 +1,310 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: arial;
+}
+
+.title {
+  color: #0c3c79;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.leftCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2;
+}
+
+.cardBlue, .cardDark {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 18px;
+  padding: 15px;
+  color: white;
+  min-height: 150px;
+  font-size: 40px;
+}
+
+.verTabelaButton {
+  background: #0c3c79; /* Azul escuro igual ao fundo do outro card */
+  color: white;
+  border: none; /* REMOVIDA a borda branca */
+  padding: 4px 10px; /* Botão menor */
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 80px; /* Largura fixa pequena */
+  transition: background 0.2s;
+
+}
+
+.verTabelaButton:hover {
+  background: #0a2f5f; /* Tom mais escuro no hover */
+}
+
+.cardBlue {
+  background-color: #00c4cc;
+}
+
+.cardDark {
+  background-color: #0c3c79;
+}
+
+.circle {
+  min-width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardContent h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cardContent p {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+.points {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.qrCard {
+  background-color: #007cff;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 260px;
+  gap: 10px;
+  font-family: arial;
+}
+
+.qrCard h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.qrImageContainer {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qrText {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.qrText p {
+  margin: 0;
+}
+
+.qrButton {
+  font-family: arial;
+  background: white;
+  color: #007cff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px; /* Botão quadrado */
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 10px;
+  width: 90px;
+  height: 25px;
+}
+/* Estilo do card escuro */
+.cardDark {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #0c3c79;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  min-height: 150px;
+}
+
+/* Círculo dos pontos */
+.circle {
+  min-width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+/* Container dos pontos */
+.pointsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+}
+
+.pointsValue {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.pointsLabel {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Conteúdo do card */
+.cardContent {
+  flex: 1;
+  
+}
+
+.cardContent h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cardContent p {
+  font-size: 12px;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+/* Botão Converter */
+.converterButton {
+  background: #00c4cc;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 80px; /* Largura fixa pequena */
+  transition: background 0.2s;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/* ANIMAÇÕES PARA TODOS OS BOTÕES */
+.verTabelaButton, .converterButton, .qrButton {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de pulsação suave ao passar o mouse */
+.verTabelaButton:hover, 
+.converterButton:hover, 
+.qrButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de clique */
+.verTabelaButton:active, 
+.converterButton:active, 
+.qrButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de onda ao clicar */
+.verTabelaButton::after, 
+.converterButton::after, 
+.qrButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.verTabelaButton:focus:not(:active)::after,
+.converterButton:focus:not(:active)::after,
+.qrButton:focus:not(:active)::after {
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
+
+/* Animação de brilho para o botão QR CODE */
+.qrButton:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}

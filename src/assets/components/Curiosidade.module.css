@@ -1,0 +1,101 @@
+.container {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Fredoka';
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Título e subtítulo padrão */
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #0074d9;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: #555;
+  line-height: 1.6;
+  
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: 1000px;
+  max-height: 400px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* adiciona uma transição suave */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.image:hover {
+  transform: scale(1.05); /* aumenta 5% ao passar o mouse */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContainer {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* --------- Atualização para a área de curiosidades --------- */
+/* Supondo que a área curiosities use container e classes próprias */
+
+.curiosities .title,
+.curiosities .subtitle {
+  /* Garante que o título e subtítulo de curiosidades tenham o mesmo tamanho */
+  font-size: inherit; /* para herdar o tamanho definido no .title e .subtitle padrão */
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: inherit;
+}
+
+/* Responsividade curiosidades */
+@media (max-width: 768px) {
+  .curiosities .title {
+    font-size: 28px; /* mesmo tamanho responsivo do título geral */
+  }
+
+  .curiosities .subtitle {
+    font-size: 16px; /* mesmo tamanho responsivo do subtítulo geral */
+  }
+}

@@ -1,0 +1,26 @@
+.politicaContainer {
+  width: 100%;          /* Ocupa 100% da largura da tela */
+  padding: 2rem 1.5rem; /* Espaçamento interno (ajuste conforme necessário) */
+  font-family: 'Fredoka';
+  color: #333;
+  background: #fff;     /* Fundo branco (opcional) */
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #005fa3;
+  text-align: left;     /* Título alinhado à esquerda */
+}
+
+.conteudo {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;     /* Texto alinhado à esquerda */
+    max-width: 1600px;
+}
+
+.conteudo p {
+  margin-bottom: 1rem;
+}

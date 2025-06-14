@@ -1,0 +1,451 @@
+/* ------------------------ GERAL ------------------------ */
+.pgdescarte {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.pgdescarte h1 {
+  color: #0d4f8c;
+  font-size: 4rem;
+}
+
+/* ------------------------ DESCARTE INTELIGENTE ------------------------ */
+.descarte1 {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.textd1 {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textd1 h1 {
+  color: #0d4f8c;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.textd1 p {
+  color: #060e24;
+  text-align: start;
+  padding-left: 7vw;
+}
+
+.imglocal {
+  width: 25%;
+  max-width: 400px;
+}
+
+.imglocal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ------------------------ POR QUE DESCARTAR? ------------------------ */
+.descarte2 {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.textd2 {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.textd2 h1 {
+  color: #0d4f8c;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.textd2 p {
+  color: #060e24;
+  text-align: start;
+}
+
+.aperte {
+  color: #0d4f8c;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.video {
+  background-color: aqua;
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ------------------------ FAIXA ------------------------ */
+.fx {
+  width: 100%;
+  height: 150px;
+  background-color: #0d4f8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.faixa_azul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.faixadd {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textfx {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.fx h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* ------------------------ PASSO A PASSO ------------------------ */
+.Passoapasso {
+  width: 100%;
+}
+
+.conteudopp {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c1{
+  padding-left: 5vw;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.Pp,
+.Sp,
+.Tp,
+.Qp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #1a73e8;
+  border-radius: 10px;
+}
+
+.n1,
+.n2,
+.n3,
+.n4 {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.frasepp{
+  padding-top: 3vh;
+  font-size: 1.5rem;
+  width: 100%;
+  min-width: 280px;
+  text-align: center;
+}  
+
+.frasepp2,
+.frasepp3,
+.frasepp4 {
+  font-size: 1.5rem;
+  width: 45%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.mao,
+.lixo,
+.anad,
+.pontoc {
+  width: 40%;
+  max-width: 300px;
+}
+
+/* ------------------------ KIT DE COLETA ------------------------ */
+.kitdescarte {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.conteudokit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.textkit {
+  width: 100%;
+  text-align: center;
+}
+
+.textkit h1 {
+  color: #0d4f8c;
+  font-size: 3rem;
+}
+
+.textkit p {
+  color: #060e24;
+  font-size: 1.6rem;
+}
+
+.informacaokit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.frase1,
+.frase2,
+.frase3 {
+  background-color: #0d81e4;
+  width: 100%;
+  max-width: 400px;
+  height: 80px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frase1:hover,
+.frase2:hover,
+.frase3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px #3ff5ef;
+}
+
+.imgkit {
+  width: 45%;
+  max-width: 500px;
+}
+
+.imgkit img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ------------------------ PONTOS DE COLETA ------------------------ */
+.pontos {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.conteudoponto {
+  width: 45%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudoponto h1 {
+  color: #0d4f8c;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.conteudoponto p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.botao {
+  width: 60%;
+  max-width: 350px;
+  height: 60px;
+  background-color: #0d81e4;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px #3ff5ef;
+}
+
+.botaotexto {
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btlocal {
+  width: 25px;
+  height: 25px;
+}
+
+.pessoapg {
+  width: 45%;
+  max-width: 400px;
+}
+
+/* ------------------------ RESPONSIVO ------------------------ */
+@media (max-width: 1024px) {
+  .textd1,
+  .textd2,
+  .textkit {
+    width: 90%;
+  }
+
+  .imglocal,
+  .imgkit,
+  .mao,
+  .lixo,
+  .anad,
+  .pontoc {
+    width: 60%;
+  }
+
+  .video {
+    height: 400px;
+  }
+
+  .fx {
+    height: 120px;
+  }
+
+  .fx h1,
+  .textfx {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pgdescarte h1 {
+    font-size: 2.5rem;
+  }
+
+  .textd1 h1,
+  .textd2 h1 {
+    font-size: 2.5rem;
+  }
+
+  .textkit h1 {
+    font-size: 2rem;
+  }
+
+  .textkit p {
+    font-size: 1.2rem;
+  }
+
+  .video {
+    height: 300px;
+  }
+
+  .fx {
+    height: 100px;
+  }
+
+  .fx h1,
+  .textfx {
+    font-size: 1.2rem;
+  }
+
+  .Pp,
+  .Sp,
+  .Tp,
+  .Qp {
+    width: 80px;
+    height: 80px;
+  }
+
+  .n1,
+  .n2,
+  .n3,
+  .n4 {
+    font-size: 2.5rem;
+  }
+
+  .frasepp,
+  .frasepp2,
+  .frasepp3,
+  .frasepp4 {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .botao {
+    width: 90%;
+    height: 50px;
+  }
+
+  .botaotexto {
+    font-size: 1rem;
+  }
+
+  .conteudoponto {
+    width: 90%;
+  }
+}

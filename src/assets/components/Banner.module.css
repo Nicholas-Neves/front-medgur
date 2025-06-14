@@ -1,0 +1,14 @@
+/* ajustes na imagem do banner */
+.bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* efeito hover sutil */
+.bannerImage:hover {
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}

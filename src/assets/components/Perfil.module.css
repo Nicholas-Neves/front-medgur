@@ -1,0 +1,137 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid #0077CC;
+}
+
+.nome {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tipo {
+  color: #999;
+  margin: 0;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.btnPrimary,
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.btnPrimary {
+  background-color: #004B87;
+  color: white;
+  border: none;
+}
+
+.btn {
+  background-color: white;
+  color: #004B87;
+  border: 2px solid #0077CC;
+}
+
+.btnPrimary:active,
+.btn:active {
+  transform: scale(0.96);
+  background-color: #003B6F;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px;
+  border: 2px solid #0077CC;
+  border-radius: 24px;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input[readonly] {
+  background-color: #f5f5f5;
+  cursor: default;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border: 2px solid #0077CC;
+  border-radius: 24px;
+  padding: 0 12px;
+  height: 48px;
+}
+
+.icon {
+  color: #004B87;
+  font-size: 18px;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:active {
+  transform: scale(0.9);
+}
+
+.inputGroup input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  background: transparent;
+}
+
+.inputGroup input[readonly] {
+  background-color: transparent;
+  cursor: default;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 14px;
+}
+
+.duploCampo {
+  display: flex;
+  gap: 16px; /* espaçamento entre os dois campos */
+}
+
+.duploCampo > div {
+  flex: 1; /* os dois campos ocupam metade do espaço cada */
+}
+
