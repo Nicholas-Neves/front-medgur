@@ -1,6 +1,6 @@
 import styles from './Cupons.module.css'; // importa os estilos css com escopo de módulo
 import raia from '../img/raia.png'; // importa imagem da farmácia raia
-import saopaulo from '../img/saopaulo.png'; // importa imagem da drogaria são paulo
+import saopaulo from '../img/saoPaulo.png'; // importa imagem da drogaria são paulo
 import bifarma from '../img/bifarma.png'; // importa imagem da bifarma
 import conde from '../img/conde.png'; // importa imagem da conde
 import popular from '../img/popular.png'; // importa imagem da farmácia popular
