@@ -1,0 +1,203 @@
+.logo {
+    height: 15%;
+  width: 200px;
+  margin-top: 1%;
+  margin-left: 2%;
+    position: absolute;
+}
+.mulher {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img{
+    width: 75%;
+    height: 80%;
+  } 
+}
+
+.canto {
+    width: 70%;
+    text-align: start;
+}
+
+a{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+
+form {
+  height: 100%;
+  width: 95%;
+  background-color: #11C5D4;
+  border-radius: 100px;
+}
+
+.campo {
+  width: 90%;
+  height: 120px;
+  border-radius: 100px;
+  border-style: none;
+  margin-bottom: 4%;
+  padding: 15px;
+}
+
+.container_conteudo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .container_conteudo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .mulher {
+    height: 35%;
+    display: flex;
+    align-items: end;
+    & img {
+      height: auto;
+      width: 40%;
+    }
+  }
+
+  .login {
+    height: 65%;
+    width: 100%;
+    padding: 0 5%;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 20px;
+  }
+
+  .campo {
+    width: 60%;
+    height: 5%;
+    font-size: 18px;
+    margin-bottom: 2%;
+    
+  }
+
+  .btn_enviar {
+    width: 50%;
+    height: 1%;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .fechar {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  label, .canto p, a {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .canto {
+    width: 85%;
+  }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .logo {
+    width: 30%;
+    margin: 20px auto;
+    position: static;
+    display: block;
+  }
+
+  .container_conteudo {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 0 5%;
+  }
+
+  .mulher {
+    display: none;
+  }
+
+  .login {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .campo {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .btn_enviar {
+    width: 100%;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .fechar {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .canto {
+    width: 100%;
+    text-align: start;
+  }
+
+  label, .canto p, a {
+    font-size: 16px;
+  }
+
+  a {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
