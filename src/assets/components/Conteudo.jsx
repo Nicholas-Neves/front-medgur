@@ -117,7 +117,7 @@ function Conteudo() {
             Acesse nosso jogo gratuito! Acumule pontos e troque por descontos
           </p>
           <div className={Styles.buttonjg}>
-            <a href="#">jogar</a>
+            <a href="https://snowmann1909.itch.io/medrush">jogar</a>
           </div>
         </div>
       </div>
