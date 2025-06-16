@@ -6,24 +6,30 @@ const Analise = () => {
   const [medicamentosDescartados, setMedicamentosDescartados] = useState([]);
   const [qrValue, setQrValue] = useState('');
 
-  // 🔥 Carregar os dados do localStorage quando abrir a página
   useEffect(() => {
     const dados = localStorage.getItem('descartes');
     if (dados) {
-      const lista = JSON.parse(dados);
-      setMedicamentosDescartados(lista);
+      const dadosParse = JSON.parse(dados);
+      setMedicamentosDescartados(dadosParse);
 
-      // Gera QR automático na abertura
-      const dadosBase64 = btoa(JSON.stringify(lista));
-      const url = `https://seusite.com/confirmar?dados=${dadosBase64}`;
-      setQrValue(url);
+      const dadosEncoded = btoa(JSON.stringify(dadosParse));
+      const link =
+        `https://front-medgur-teste-7x2s1d39b-nicholas-neves-projects.vercel.app/confirmar?dados=${dadosEncoded}`;
+
+      setQrValue(link);
     }
   }, []);
 
   const gerarNovoQR = () => {
-    const dadosBase64 = btoa(JSON.stringify(medicamentosDescartados));
-    const url = `https://seusite.com/confirmar?dados=${dadosBase64}`;
-    setQrValue(url);
+    const dados = localStorage.getItem('descartes');
+    if (dados) {
+      const dadosParse = JSON.parse(dados);
+      const dadosEncoded = btoa(JSON.stringify(dadosParse));
+      const link =
+        `https://front-medgur-teste-7x2s1d39b-nicholas-neves-projects.vercel.app/confirmar?dados=${dadosEncoded}`;
+
+      setQrValue(link);
+    }
   };
 
   return (
@@ -81,12 +87,12 @@ const Analise = () => {
                 fgColor="#000000"
               />
             ) : (
-              <p className={styles.vazio}>Nenhum QR gerado ainda.</p>
+              <p className={styles.vazio}>Nenhum QR gerado.</p>
             )}
           </div>
           <h3>QR CODE</h3>
           <div className={styles.qrText}>
-            <p>Leve a uma farmácia para o seu descarte ser validado</p>
+            <p>Leve a uma farmácia para validar seu descarte</p>
           </div>
           <button className={styles.qrButton} onClick={gerarNovoQR}>
             Gerar QR
