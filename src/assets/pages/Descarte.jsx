@@ -10,8 +10,11 @@ import Ana from "../img/ana.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Pontoc from "../img/localazul.png";
+import ModalDescartar from "../components/ModalDescarte";
+import { useState } from 'react';
 
 function Descarte() {
+  const [open, setOpen] = useState(false);
   return (
     <main>
     <section className={Styles.pgdescarte}>
@@ -23,6 +26,8 @@ function Descarte() {
           <p className={Styles.t1}>
             Descarte corretamente e faça parte da transformação que protege nosso planeta!
           </p>
+        <button className={Styles["btn-descartar"]} onClick={() => setOpen(true)}>Descartar</button>
+{open && <ModalDescartar onClose={() => setOpen(false)} />}
         </div>
         <img className={Styles.imglocal} src={Local1} alt="Ícone localização" />
       </section>
