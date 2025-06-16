@@ -14,7 +14,7 @@ const Analise = () => {
 
       const dadosEncoded = btoa(JSON.stringify(dadosParse));
       const link =
-        `https://front-medgur-teste-7x2s1d39b-nicholas-neves-projects.vercel.app/confirmar?dados=${dadosEncoded}`;
+        `https://front-medgur-teste.vercel.app/confirmar?dados=${dadosEncoded}`;
 
       setQrValue(link);
     }
@@ -26,7 +26,7 @@ const Analise = () => {
       const dadosParse = JSON.parse(dados);
       const dadosEncoded = btoa(JSON.stringify(dadosParse));
       const link =
-        `https://front-medgur-teste-7x2s1d39b-nicholas-neves-projects.vercel.app/confirmar?dados=${dadosEncoded}`;
+        `https://front-medgur-teste.vercel.app/confirmar?dados=${dadosEncoded}`;
 
       setQrValue(link);
     }
