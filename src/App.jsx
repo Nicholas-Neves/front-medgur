@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sobre_Nos from './assets/pages/sobre_nos'
 import Home from './assets/pages/home'
+import Confirmar from './assets/pages/Confirmar'
 import Profile from './assets/pages/Profile'
 import Cupom from './assets/pages/cupom'
 import Converter from './assets/pages/converter'
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre-nos" element={<Sobre_Nos />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/confirmar" element={<Confirmar />} />
         <Route path="/cupom" element={<Cupom />} />
         <Route path="/converter" element={<Converter />} />
         <Route path="/descarte" element={<Descarte />} />
