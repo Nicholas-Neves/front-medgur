@@ -2,7 +2,7 @@ import { useState } from "react";
 import moça from "../img/moçaCadastro.png";
 import logo from "../img/logo-medgur-2.png";
 import style from "./Login.module.css";
-import styles from "./Usuario.module.css";
+import styles from "./usuario.module.css";
 import axios from "axios";
 
 function Usuario() {
