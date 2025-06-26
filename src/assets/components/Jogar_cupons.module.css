@@ -1,0 +1,144 @@
+.wrapper {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: arial;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.guaxinim {
+  width: 450px;
+  height: auto;
+  transition: transform 0.3s ease; 
+  transform-origin: center;
+}
+
+/* Efeito */ 
+.guaxinim:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.titulo {
+  font-size: 55px;
+  color: #004080;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+
+.botao {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  
+
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(13, 129, 228, 0.4);
+}
+
+.iconeImg {
+  width: 16px;
+  height: 16px;
+}
+
+/* RESPONSIVOS */
+@media (max-width: 1024px) {
+  .content {
+    max-width: 90%;
+  }
+  
+  .guaxinim {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: auto;
+    padding: 60px 20px;
+  }
+  
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .textos {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 38px;
+  }
+  
+  .guaxinim {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 32px;
+  }
+  
+  .subtitulo {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .guaxinim {
+    width: 250px;
+  }
+  
+  .botao {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+}
+
+/* Efeito de zoom para mobile */
+@media (hover: none) {
+  .guaxinim:hover {
+    transform: none; /* Remove o zoom em dispositivos sem hover */
+  }
+}

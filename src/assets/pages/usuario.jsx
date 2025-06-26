@@ -30,10 +30,9 @@ function Usuario() {
     }
 
     try {
-      const response = await axios.post("http://SEU_BACKEND_URL/api/cadastro", formData);
+      const response = await axios.post("", formData);
       if (response.status === 201 || response.status === 200) {
         alert("Cadastro realizado com sucesso!");
-        // Redirecionar ou limpar campos
       }
     } catch (error) {
       console.error(error);
@@ -42,17 +41,19 @@ function Usuario() {
   };
 
   return (
-    <main>
+    <main className={styles.main}>
       <img className={styles.logo} src={logo} alt="Logo" />
       <div className={styles.container_conteudo}>
         <div className={styles.mulher}>
-          <img src={moça} alt="Ilustração" />
+          <img className={styles.img_mulher} src={moça} alt="Ilustração" />
         </div>
         <div className={style.login}>
-          <form onSubmit={handleSubmit}>
+          <form className={styles.form_usuario} onSubmit={handleSubmit}>
             <div className={style.header_form}>
-              <h1>Cadastro</h1>
-              <button className={style.fechar} type="button">X</button>
+              <h1 className={styles.titulo}>Cadastro</h1>
+              <button className={style.fechar} type="button">
+                X
+              </button>
             </div>
             <div className={style.main_form}>
               <input
@@ -64,7 +65,7 @@ function Usuario() {
                 onChange={handleChange}
                 required
               />
-              <br />
+              <br className={styles.br} />
               <input
                 type="email"
                 className={styles.campo}
@@ -74,7 +75,7 @@ function Usuario() {
                 onChange={handleChange}
                 required
               />
-              <br />
+              <br className={styles.br} />
               <input
                 type="password"
                 className={styles.campo}
@@ -84,7 +85,7 @@ function Usuario() {
                 onChange={handleChange}
                 required
               />
-              <br />
+              <br className={styles.br} />
               <input
                 type="password"
                 className={styles.campo}
@@ -95,14 +96,14 @@ function Usuario() {
                 required
               />
               <div className={styles.canto}>
-                <p>Senha com no mínimo 6 caracteres</p>
-                <p>Senha com pelo menos um número</p>
+                <p className={styles.requisito}>Senha com no mínimo 6 caracteres</p>
+                <p className={styles.requisito}>Senha com pelo menos um número</p>
               </div>
               <button className={style.btn_enviar} type="submit">
                 Criar conta
               </button>
-              <a href="/">
-                <label>Já tenho cadastro!</label>
+              <a className={styles.link_login} href="/">
+                <label className={styles.label_login}>Já tenho cadastro!</label>
               </a>
             </div>
           </form>

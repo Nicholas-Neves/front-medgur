@@ -1,0 +1,42 @@
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Removido completamente o padding */
+  margin: 0; /* Removido todas as margens */
+}
+
+.bannerImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0; /* Garante que a imagem não tenha margens */
+}
+
+/* Remove quaisquer espaços extras em todas as resoluções */
+@media (max-width: 1024px) {
+  .bannerContainer {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerContainer, .bannerImage {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerContainer {
+    line-height: 0; /* Elimina espaços fantasmas */
+  }
+  
+  .bannerImage {
+    display: block;
+    width: 100%;
+  }
+}

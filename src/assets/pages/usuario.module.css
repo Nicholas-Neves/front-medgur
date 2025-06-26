@@ -1,56 +1,124 @@
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
-    height: 15%;
+  height: 15%;
   width: 200px;
   margin-top: 1%;
   margin-left: 2%;
-    position: absolute;
-}
-.mulher {
-  width: 100%;
-  height: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & img{
-    width: 75%;
-    height: 80%;
-  } 
-}
-
-.canto {
-    width: 70%;
-    text-align: start;
-}
-
-a{
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 20px;
-}
-
-
-form {
-  height: 100%;
-  width: 95%;
-  background-color: #11C5D4;
-  border-radius: 100px;
-}
-
-.campo {
-  width: 90%;
-  height: 120px;
-  border-radius: 100px;
-  border-style: none;
-  margin-bottom: 4%;
-  padding: 15px;
+  position: absolute;
 }
 
 .container_conteudo {
   width: 100%;
   height: 100%;
   display: flex;
-  
+}
+
+.mulher {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_mulher {
+  width: 75%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.form_usuario {
+  height: 100%;
+  width: 95%;
+  background-color: #11c5d4;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.titulo {
+  font-size: 3rem;
+  color: #0d4f8c;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.campo {
+  width: 90%;
+  height: 60px;
+  border-radius: 100px;
+  border: none;
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #0d4f8c;
+}
+
+.canto {
+  width: 70%;
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+.requisito {
+  font-size: 1rem;
+  color: #0d4f8c;
+  margin: 0;
+}
+
+.btn_enviar {
+  width: 60%;
+  height: 55px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0d4f8c 60%, #11c5d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 16px rgba(13, 79, 140, 0.12);
+  cursor: pointer;
+  margin: 1.5rem 0 0.5rem 0;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  display: block;
+  align-self: center;
+  letter-spacing: 0.5px;
+}
+.btn_enviar:hover,
+.btn_enviar:focus {
+  background: linear-gradient(90deg, #11c5d4 0%, #0d4f8c 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 24px #11c5d444;
+  outline: none;
+}
+
+.link_login {
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  display: block;
+  text-align: center;
+  color: #0d4f8c;
+  text-decoration: none;
+}
+
+.label_login {
+  cursor: pointer;
+  color: #0d4f8c;
+  font-weight: 500;
+}
+
+.br {
+  display: none;
 }
 
 /* Tablets (até 1024px) */
@@ -68,63 +136,54 @@ form {
     height: 35%;
     display: flex;
     align-items: end;
-    & img {
-      height: auto;
-      width: 40%;
-    }
+  }
+  .img_mulher {
+    height: auto;
+    width: 40%;
   }
 
-  .login {
-    height: 65%;
-    width: 100%;
-    padding: 0 5%;
-    align-items: center;
-  }
-
-  form {
+  .form_usuario {
     width: 100%;
     height: 100%;
     border-radius: 50px;
-    padding: 20px;
+    padding: 2rem 0;
   }
 
   .campo {
-    width: 60%;
-    height: 5%;
-    font-size: 18px;
-    margin-bottom: 2%;
-    
+    width: 80%;
+    height: 50px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .btn_enviar {
-    width: 50%;
-    height: 1%;
-    font-size: 22px;
-    margin-top: 10px;
+    width: 70%;
+    height: 48px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 
-  .fechar {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-  }
-
-  h1 {
-    font-size: 38px;
-  }
-
-  label, .canto p, a {
-    font-size: 12px;
-    text-align: center;
+  .titulo {
+    font-size: 2.2rem;
   }
 
   .canto {
     width: 85%;
   }
+  .requisito {
+    font-size: 0.95rem;
+  }
+  .link_login {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Celulares (até 600px) */
 @media (max-width: 600px) {
+  .main {
+    padding: 0;
+  }
   .logo {
     width: 30%;
     margin: 20px auto;
@@ -144,60 +203,42 @@ form {
     display: none;
   }
 
-  .login {
+  .form_usuario {
     width: 100%;
-    align-items: flex-start;
-  }
-
-  form {
-    width: 100%;
-    padding: 15px;
+    padding: 1.2rem 0;
     border-radius: 30px;
   }
 
   .campo {
     width: 100%;
-    height: 50px;
-    font-size: 16px;
+    height: 44px;
+    font-size: 0.98rem;
     padding: 12px;
+    margin-bottom: 0.8rem;
   }
 
   .btn_enviar {
     width: 100%;
-    height: 55px;
-    font-size: 20px;
+    height: 44px;
+    font-size: 1rem;
+    margin-top: 0.8rem;
   }
 
-  .fechar {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 28px;
-    text-align: center;
+  .titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .canto {
     width: 100%;
     text-align: start;
   }
-
-  label, .canto p, a {
-    font-size: 16px;
+  .requisito {
+    font-size: 0.9rem;
   }
-
-  a {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: block;
-    text-align: center;
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+  .link_login {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
   }
 }

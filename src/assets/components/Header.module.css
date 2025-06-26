@@ -88,7 +88,7 @@
 
 
 
-/* Responsive Styles */
+
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
