@@ -31,7 +31,7 @@ function Usuario() {
 
   try {
     const response = await axios.post(
-      "https://api-medgur-production.up.railway.app/cadastro",
+      "https://api-medgur-production.up.railway.app/medgur/cadastro",
       formData
     );
     console.log("✅ RESPOSTA DO BACK:", response);
