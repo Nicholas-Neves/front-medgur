@@ -22,23 +22,31 @@ function Usuario() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (formData.senha_usuario !== formData.confirmacao_usuario) {
-      alert("As senhas não conferem!");
-      return;
-    }
+  if (formData.senha_usuario !== formData.confirmacao_usuario) {
+    alert("As senhas não conferem!");
+    return;
+  }
 
-    try {
-      const response = await axios.post("", formData);
-      if (response.status === 201 || response.status === 200) {
-        alert("Cadastro realizado com sucesso!");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Erro ao cadastrar. Verifique seus dados.");
+  try {
+    const response = await axios.post(
+      "https://api-medgur-production.up.railway.app/cadastro",
+      formData
+    );
+    console.log("✅ RESPOSTA DO BACK:", response);
+    alert("Cadastro realizado com sucesso!");
+  } catch (error) {
+    console.log("❌ ERRO AO CADASTRAR:", error);
+    if (error.response) {
+      console.log("➡️ Status:", error.response.status);
+      console.log("➡️ Data:", error.response.data);
+      alert(`Erro ao cadastrar: ${error.response.data?.message || "Erro desconhecido"}`);
+    } else {
+      alert("Erro desconhecido. Veja o console.");
     }
-  };
+  }
+};
 
   return (
     <main className={styles.main}>

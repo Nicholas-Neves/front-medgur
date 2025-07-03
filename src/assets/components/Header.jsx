@@ -17,7 +17,7 @@ function Header() {
         <Link to="/cupom">Cupons</Link>
       </nav>
       <div className={Styles.login}>
-        <Link to="/profile">Entrar</Link>
+        <Link to="/Usuario">Entrar</Link>
         <div className={Styles.fundo}></div>
       </div>
     </header>
