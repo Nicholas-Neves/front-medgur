@@ -6,13 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #C7EDF4, #FFFFFF);
 
 }
 
 .Medgur {
-    width: 45%;
-    height: 500px;
+    width: 40%;
+    height: 400px;
     float: left;
     transition: transform 0.4s ease;
     background-size: cover;

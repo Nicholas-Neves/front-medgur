@@ -4,20 +4,24 @@ import Sobre_Nos from './assets/pages/sobre_nos'
 import Home from './assets/pages/home'
 import Confirmar from './assets/pages/Confirmar'
 import Profile from './assets/pages/Profile'
+import Noticias from './assets/pages/noticias'
 import Cupom from './assets/pages/cupom'
 import Usuario from './assets/pages/usuario'
 import Converter from './assets/pages/converter'
 import Api from './assets/pages/leitorOcr/leitor'
 import Descarte from './assets/pages/Descarte'
 import Parceiros from './assets/pages/parceiros'
+import FloatingChat from './assets/components/Chatbot'
 import Politica_Privacidade from './assets/pages/politica_privacidade'
 
 function App() {
   return (
     <Router>
       <Api />
+      <FloatingChat />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/noticias" element={<Noticias />} />
         <Route path="/sobre-nos" element={<Sobre_Nos />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/usuario" element={<Usuario />} />

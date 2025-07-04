@@ -11,7 +11,7 @@ function Header() {
       <nav className={Styles.navegation}>
         <Link to="/">Início</Link>
         <Link to="/descarte">Pontos de descarte</Link>
-        <Link to="#">Notícias</Link>
+        <Link to="/noticias">Notícias</Link>
         <Link to="/sobre-nos">Sobre nós</Link>
         <Link to="/parceiros">Parcerias</Link>
         <Link to="/cupom">Cupons</Link>

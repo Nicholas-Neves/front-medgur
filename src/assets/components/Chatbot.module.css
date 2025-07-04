@@ -1,0 +1,135 @@
+.floatingchatwrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.floatingchattooltip {
+    background-color: #0D81E4;
+    color: #FFF3D5;
+    font-family: 'Poppins';
+    padding: 10px 15px;
+    border-radius: 25px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+
+.floatingchatwrapper:hover .floatingchattooltip {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.floatingchatbutton {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1002;
+}
+
+.floatingchatbutton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Fundo escurecido e blur */
+.floatingchatblur {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Container do chat */
+.floatingchatopened {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    width: 400px;
+    height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FFF9EA;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    z-index: 1002;
+}
+
+/* Topo do chat */
+.floatingchattop {
+    background-color: #0D81E4;
+    color: white;
+    font-family: 'Poppins';
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ticoavatar {
+    width: 75px;
+    height: 70px;
+    margin-bottom: -20px;
+    margin-right: 10px;
+}
+
+
+
+.toptext {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.2;
+    height: 55px;
+    margin-top: 15px;
+}
+
+.toptext h1 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.toptext p {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+
+
+
+.closebtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}

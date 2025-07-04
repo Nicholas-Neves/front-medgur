@@ -2,6 +2,7 @@
 .pgdescarte {
   color: #000;
   font-size: 1.8rem;
+
 }
 
 .pgdescarte h1 {
@@ -19,29 +20,28 @@
   flex-wrap: wrap;
 }
 
-.btn-descartar {
-  background: linear-gradient(90deg, #0d4f8c 60%, #11c5d4 100%);
+.BtnDescartar {
+  background-color: #0D81E4;
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 0.9rem 2.5rem;
+  margin-left: 40px;
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
   border: none;
-  border-radius: 2rem;
-  box-shadow: 0 2px 16px rgba(13, 79, 140, 0.12);
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  margin: 2rem 0;
-  outline: none;
-  letter-spacing: 0.5px;
-  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-descartar:hover,
-.btn-descartar:focus {
-  background: linear-gradient(90deg, #11c5d4 0%, #0d4f8c 100%);
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 24px #11c5d444;
+.BtnDescartar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(13, 129, 228, 0.4);
 }
+
 
 .textd1 {
   width: 50%;
@@ -52,8 +52,6 @@
 }
 
 .textd1 h1 {
-  color: #0d4f8c;
-  font-size: 4.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -76,51 +74,27 @@
 
 /* ------------------------ POR QUE DESCARTAR? ------------------------ */
 .descarte2 {
-  width: 100%;
-  min-height: 400px;
+  width: 70%;
+  height: 500px;
+  margin-left: 15%;
   display: flex;
-  justify-content: center;
-}
-
-.textd2 {
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.textd2 h1 {
+.descarte2 h1 {
   color: #0d4f8c;
   font-size: 4.5rem;
   margin-bottom: 1.5rem;
 }
 
-.textd2 p {
+.descarte2 p {
   color: #060e24;
-  text-align: start;
+  margin-top: 0;
 }
 
-.aperte {
-  color: #0d4f8c;
-  text-align: center;
-  font-size: 2rem;
-  padding: 3rem;
-}
-
-.video {
-  background-color: aqua;
-  width: 100%;
-  max-width: 1000px;
-  height: 500px;
-  margin: 0 auto;
-}
-
-.video iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
 /* ------------------------ FAIXA ------------------------ */
 .fx {
@@ -173,9 +147,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 }
 
-.c1{
+.c1 {
   padding-left: 5vw;
 }
 
@@ -212,14 +187,15 @@
   margin: 0;
 }
 
-.frasepp{
+.frasepp {
   padding-top: 3vh;
   font-size: 1.5rem;
   width: 100%;
   min-width: 280px;
   text-align: center;
-}  
+}
 
+.frasepp1,
 .frasepp2,
 .frasepp3,
 .frasepp4 {
@@ -259,11 +235,16 @@
 .textkit h1 {
   color: #0d4f8c;
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .textkit p {
   color: #060e24;
   font-size: 1.6rem;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .informacaokit {
@@ -275,11 +256,10 @@
 .frase1,
 .frase2,
 .frase3 {
-  background-color: #0d81e4;
-  width: 100%;
-  max-width: 400px;
+  width: 300px;
   height: 80px;
   border-radius: 8px;
+  background-color: #0d81e4;
   color: white;
   display: flex;
   align-items: center;
@@ -314,6 +294,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+
 }
 
 .conteudoponto {
@@ -329,6 +310,7 @@
   color: #0d4f8c;
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .conteudoponto p {
@@ -347,6 +329,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: 50px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -354,6 +337,7 @@
 .botao:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px 5px #3ff5ef;
+
 }
 
 .botaotexto {
@@ -377,9 +361,11 @@
 
 /* ------------------------ RESPONSIVO ------------------------ */
 @media (max-width: 1024px) {
+
   .textd1,
   .textd2,
-  .textkit {
+  .textkit,
+  .conteudoponto {
     width: 90%;
   }
 
@@ -388,44 +374,10 @@
   .mao,
   .lixo,
   .anad,
-  .pontoc {
-    width: 60%;
-  }
-
-  .video {
-    height: 400px;
-  }
-
-  .fx {
-    height: 120px;
-  }
-
-  .fx h1,
-  .textfx {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .pgdescarte h1 {
-    font-size: 2.5rem;
-  }
-
-  .textd1 h1,
-  .textd2 h1 {
-    font-size: 2.5rem;
-  }
-
-  .textkit h1 {
-    font-size: 2rem;
-  }
-
-  .textkit p {
-    font-size: 1.2rem;
-  }
-
-  .video {
-    height: 300px;
+  .pontoc,
+  .pessoapg {
+    width: 50%;
+    max-width: 280px;
   }
 
   .fx {
@@ -434,42 +386,176 @@
 
   .fx h1,
   .textfx {
+    font-size: 1.8rem;
+  }
+
+  .frasepp1,
+  .frasepp2,
+  .frasepp3,
+  .frasepp4 {
+    width: 90%;
+  }
+
+  .conteudoponto h1 {
+    font-size: 2.2rem;
+  }
+
+  .botao {
+    width: 80%;
+  }
+
+  .textd1 h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .textd1 p {
     font-size: 1.2rem;
+    padding-left: 5vw;
+    text-align: center;
+  }
+
+  .descarte2 h1 {
+    font-size: 2.5rem;
+  }
+
+  .descarte2 p {
+    font-size: 1.2rem;
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pgdescarte h1,
+  .textd1 h1,
+  .textd2 h1,
+  .descarte2 h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .textkit h1 {
+    font-size: 1.8rem;
+  }
+
+  .textkit p {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  .fx {
+    height: 80px;
+  }
+
+  .fx h1,
+  .textfx {
+    font-size: 1rem;
   }
 
   .Pp,
   .Sp,
   .Tp,
   .Qp {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .n1,
   .n2,
   .n3,
   .n4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .frasepp,
+  .frasepp1,
   .frasepp2,
   .frasepp3,
   .frasepp4 {
-    width: 90%;
+    width: 95%;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .frasepp {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .frasepontos {
+    margin-top: 40px;
+   
+  }
+
+  .conteudoponto h1 {
+    font-size: 1.8rem;
+  }
+
+  .conteudoponto p {
     font-size: 1.2rem;
   }
 
   .botao {
     width: 90%;
-    height: 50px;
+    height: 45px;
   }
 
   .botaotexto {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .conteudoponto {
+  .imglocal,
+  .imgkit,
+  .mao,
+  .lixo,
+  .anad,
+  .pontoc,
+  .pessoapg {
+    width: 70%;
+    max-width: 220px;
+  }
+
+  .BtnDescartar {
+    width: 40%;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .frase1,
+  .frase2,
+  .frase3 {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .frase1{
+    font-size: 15px;
+  }
+  
+  .textd1 h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+  .textd1 p {
+    font-size: 1rem;
+    padding-left: 5vw;
+    text-align: center;
+  }
+
+  .descarte2 h1 {
+    font-size: 1.8rem;
+  }
+
+  .descarte2 p {
+    font-size: 1rem;
     width: 90%;
   }
 }
